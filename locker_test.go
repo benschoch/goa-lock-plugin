@@ -177,7 +177,7 @@ func TestLocker_Lock(t *testing.T) {
 			found := 0
 			for _, checksum := range test.wantLockFileChecksums {
 				for _, line := range lines {
-					hasSuffix := strings.HasSuffix(line, "::"+string(checksum))
+					hasSuffix := strings.HasSuffix(line, "::"+checksum)
 					if hasSuffix {
 						found++
 					}
