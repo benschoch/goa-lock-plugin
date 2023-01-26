@@ -22,7 +22,9 @@ jobs:
         run: go get .
 
       - name: Lint
-        run: make lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          version: v1.50
 
       - name: Test
         run: make test
