@@ -1,0 +1,8 @@
+# IDE
+.idea/
+
+# generated files
+/bin
+/gen
+/out
+/tmp
