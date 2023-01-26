@@ -19,7 +19,7 @@ jobs:
         run: go version
 
       - name: Install dependencies
-        run: make download
+        run: go get .
 
       - name: Lint
         run: make lint
