@@ -8,7 +8,7 @@ This is a plugin for [goa](https://github.com/goadesign/goa) that provides a sim
 The idea behind this concept is to ensure that the code that is not part of your repository, is still in the expected state and does not change in your CI/CD process.
 
 By enabling this plugin within your goa setup, you will get a file created in your output directory, called `goa.lock` when you execute the `goa gen` command.  
-That file can be used within your CI/CD to validate that the generated code didn't change accidentally.
+That file can be used in your CI/CD to validate that the generated code didn't change accidentally.
 
 --- 
 
@@ -20,7 +20,7 @@ package mygoadesigns
     
 import (
     // import plugin for side effects on `goa gen`
-    _ "module github.com/benschoch/goa-lock-plugin"
+    _ "github.com/benschoch/goa-lock-plugin"
 )
 ```
 
